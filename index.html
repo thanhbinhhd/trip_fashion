@@ -46,7 +46,7 @@
             <div class="job-search">
               <div class="tab-content bg-white p-4 rounded" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-job" role="tabpanel" aria-labelledby="pills-job-tab">
-                  <form action="#" method="post">
+                  <!-- <form action="#" method="post"> -->
                     <div class="row">
                       <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
                         <div class="select-wrap">
@@ -61,17 +61,23 @@
                           </select>
                         </div>
                       </div>
-                      <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
-                        <input type="date" class="form-control">
+                      <div class="col-md-6 col-lg-3 mb-3 mb-lg-0" id="start_date">
+                        <div class="input-group date">
+                          <input type="text" class="form-control" placeholder="出発日">
+                          <span class="input-group-addon"></span>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-lg-3 mb-3 mb-lg-0" id="end_date">
+                        <div class="input-group date">
+                          <input type="text" class="form-control" placeholder="帰国日">
+                          <span class="input-group-addon"></span>
+                        </div>
                       </div>
                       <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
-                        <input type="date" class="form-control">
-                      </div>
-                      <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
-                        <input type="submit" class="btn btn-primary btn-block" value="検索">
+                        <button id="search_button" class="btn btn-primary btn-block">検索</button>
                       </div>
                     </div>
-                  </form>
+                  <!-- </form> -->
                 </div>
               </div>
             </div>
@@ -80,8 +86,7 @@
       </div>
     </div>
 
-
-    <div class="site-section bg-light">
+    <div class="site-section bg-light" id="result_section">
       <div class="container">
         <div class="row justify-content-start text-left mb-5">
           <div class="col-md-9" data-aos="fade">
@@ -92,7 +97,7 @@
         <div class="row　my-2" data-aos="fade">
          <div class="col-md-12">
 
-           <div class=" bg-white p-4 row">
+           <div class=" bg-white p-4 my-3 shadow row">
             <div class="col-2">
               2月1日
             </div>
@@ -134,7 +139,7 @@
         <div class="row　my-2" data-aos="fade">
          <div class="col-md-12">
 
-           <div class=" bg-white p-4 row">
+           <div class=" bg-white p-4 my-3 shadow row">
             <div class="col-2">
               2月1日
             </div>
@@ -176,7 +181,7 @@
         <div class="row　my-2" data-aos="fade">
          <div class="col-md-12">
 
-           <div class=" bg-white p-4 row">
+           <div class=" bg-white p-4 my-3 shadow row">
             <div class="col-2">
               2月1日
             </div>
@@ -229,6 +234,7 @@
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="locales/bootstrap-datepicker.ja.min.js"></script>
   <script src="js/all.min.js"></script>
   <script src="js/main.js"></script>
 
