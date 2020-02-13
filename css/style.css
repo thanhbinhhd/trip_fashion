@@ -67,6 +67,9 @@ a {
 .site-section {
   padding: 3em 0; }
   @media (min-width: 768px) {
+    #result_section .date{
+      font-size: 1.6rem;
+    }
     .site-section {
       padding: 7em 0; } }
   .site-section.site-section-sm {
@@ -127,6 +130,9 @@ a {
     background: rgba(238, 198, 10, 0.9); }
 
 @media (max-width: 767.98px) {
+  .weather-info{
+    border: none !important;
+  }
   .display-3, .display-2, .display-4 {
     font-size: 2rem !important; } }
 
